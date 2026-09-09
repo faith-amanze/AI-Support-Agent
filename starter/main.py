@@ -1,4 +1,4 @@
-﻿"""
+"""
 Customer Support AI Agent -- Starter Code
 ==========================================
 Your task is to complete this file by implementing all sections marked
@@ -36,7 +36,7 @@ from bedrock_agentcore.tools.code_interpreter_client import code_session
 from strands_tools.browser import AgentCoreBrowser
 
 
-logging.basicConfig(level=logging.WARNING)
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger("CSAI_Agent")
 
 app = BedrockAgentCoreApp()
