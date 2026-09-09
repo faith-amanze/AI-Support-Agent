@@ -345,7 +345,7 @@ async def invoke(payload, context=None):
                 system_prompt=system_prompt,
             )
 
-            response = agent(user_input)
+            response = await agent.invoke_async(user_input)
             return response.message["content"][0]["text"]
 
     except Exception as e:
