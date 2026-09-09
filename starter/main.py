@@ -368,4 +368,6 @@ def main():
 if __name__ == "__main__":
     app.run()
     # Uncomment the line below and comment app.run() for local CLI testing:
-    # main()
+    # main()  # Uncomment for local CLI testing instead
+
+
