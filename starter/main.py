@@ -1,4 +1,4 @@
-"""
+﻿"""
 Customer Support AI Agent -- Starter Code
 ==========================================
 Your task is to complete this file by implementing all sections marked
@@ -36,7 +36,7 @@ from bedrock_agentcore.tools.code_interpreter_client import code_session
 from strands_tools.browser import AgentCoreBrowser
 
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger("CSAI_Agent")
 
 app = BedrockAgentCoreApp()
@@ -44,7 +44,7 @@ app = BedrockAgentCoreApp()
 os.environ["BYPASS_TOOL_CONSENT"] = "true"
 
 GATEWAY_URL = os.environ.get("GATEWAY_URL", "https://customersupportgateway-c3kphwcoil.gateway.bedrock-agentcore.us-east-1.amazonaws.com/mcp")
-KB_ID       = os.environ.get("KB_ID", "<kbid>")
+KB_ID = os.environ.get("KB_ID", "Z15BUJFN54")
 REGION      = os.environ.get("REGION", "us-east-1")
 MEMORY_ID   = os.environ.get("MEMORY_ID", "CustomerSupportMemory-rNlj1Z5aev")
 
@@ -369,5 +369,8 @@ if __name__ == "__main__":
     app.run()
     # Uncomment the line below and comment app.run() for local CLI testing:
     # main()  # Uncomment for local CLI testing instead
+
+
+
 
 
